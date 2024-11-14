@@ -1,0 +1,268 @@
+
+  /*Reset basico*/
+  * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+  }
+   boby {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:rgb(148, 148, 91);
+    color: rgb(177, 145, 106);
+   }
+
+   h1, h2, h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   header {
+    background-color:rgb(75, 23, 23);
+    color:white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   header nav ul {
+    list-style: none;
+    display: flex;
+   }
+
+   header nav ul li {
+    margin-left: 20px;
+   }
+
+   header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+   }
+
+   /* banner */
+   .banner {
+    background-image: url(/imagenes/Wine\ Pro\ \(2\).png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+   }
+   
+    .banner-contenido {
+        position: relative;
+        z-index: 2;
+        padding: 20px;
+    }
+
+   .banner-contenido h2 {
+     font: size 3.5em;
+     margin: 0 0 20px;
+     font-weight: bold;
+    text-transform: uppercase;
+}
+.banner-contenido p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+   .cta-button {
+background-color: rgb(145, 156, 40);
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-top: 20px;
+font-size: 1.2rem;
+font-weight: bold;
+transition: background-color 0.3s ease;
+margin-bottom: 20px;
+text-align: center;
+
+   }
+   /* productos  destacados*/
+   .productos-destacados {
+    padding: 40px 20px;
+    text-align: center;
+   }
+   .productos-destacados h2 {
+    margin-bottom: 20px;
+   }
+
+   .productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+   .producto {
+    width: calc(30%);
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content:center;
+    display:flex;
+   }
+   .porducto img {
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    object-fit: cover;
+    display: block;
+ .productos img {
+    max-width: 100%;
+    height: auto;
+    display:block;
+    width:auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+   }
+
+   .boton-ver, .boton-comprar {
+    display: inline-block;
+    background-color: #C6A56E;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+   }
+
+   .bonon-ver {
+    background-color: #800020;
+   }
+   .boton-comprar:hover, .boton-ver:hover {
+    background-color: #D1A557;
+   }
+
+   .categoria ul {
+    list-style: none;
+   }
+   .categoria ul li {
+    margin-bottom: 10px;
+   }
+   .cta-button {
+    margin-top: 20px;
+   }
+   .categorias {
+    padding: 40px 20px;
+    text-align: center;
+   }
+
+   .categorias-conteiner { 
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+   }
+   .categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+   }
+   .categoria img {
+    width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+   }
+   .boton-categoria {
+    display: inline-block;
+    background-color: #C6A56E;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+   }
+/* seccion reseñas */
+   .h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+   }
+   .reseñas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+   }
+ .reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+   }
+ .reseña-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+   /* imagen de cliente */
+   .reseña-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+   }
+   /* contenido de las reseñas */
+ .reseña-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.reseña-card h4 {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: right;
+}
+.reseña-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .reseña-card p {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+footer, .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
