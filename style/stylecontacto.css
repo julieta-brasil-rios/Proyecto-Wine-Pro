@@ -41,7 +41,7 @@
    
    /* banner */
    .banner {
-    background-image: url(/imagenes/Wine\ Pro\ \(2\).png);
+    background-image: url(../imagenes/Wine\ Pro\ \(2\).png);
     background-size: cover;
     background-position: center;
     height: 80vh;
