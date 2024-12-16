@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos WinePro</title>
     <link rel="stylesheet" href="../style/productos.css">
+    <link rel="stylesheet" href="../style/basicos.css">
 </head>
 <body>
     <header>
@@ -13,10 +14,10 @@
         </div>  
        <nav id="navegador"> 
        <ul>
-           <li> <a href="../index.html">INICIO</a></li>
+           <li><a href="../index.html">INICIO</a></li>
            <li><a href="./productos.html">PRODUCTOS</a></li>
            <li><a href="./Contacto.html">CONTACTO</a></li>
-   
+           <li><a href="#" id="cart-icon"><i class="carrito" id="carrito"></i>Ver Carrito (<span id="cart-count">0</span>)</a></li>
        </ul>
    </nav>
    </header> 
@@ -29,96 +30,115 @@
        </div>
    </section>
     <main>
-       <section class="productos">
+       <section id="productos" class="productos">
         <h2>Nuestros productos</h2>
-        <div class="productos-container">
-            <div class="producto-card">
+        <div id="productos-container" class="productos-container">
+            <div id="producto-card" class="producto-card" data-id="1" data-name="la iride" data-price="5000">
                 <img src="../imagenes/productos/la iride.png" alt="producto 1">
                 <h3>La Iride</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $5.000</samp>
+                <samp id="precio" class="precio"> $5.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card" data-id="2" data-name="algodon" data-price="8500">
                 <img src="../imagenes/productos/algodon.png" alt="producto 2">
                 <h3>Algodon</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $8.500</samp>
+                <samp id="precio" class="precio"> $8.500</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card" data-id="3" data-name="azul" data-price="11000">
                 <img src="../imagenes/productos/azul.png" alt="producto 3">
                 <h3>La Azul</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $11.000</samp>
+                <samp id="precio" class="precio"> $11.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card" data-id="4" data-name="bobo" data-price="16000">
                 <img src="../imagenes/productos/bobo..png" alt="producto 4">
                 <h3>bobo</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $16.000</samp>
+                <samp id="precio" class="precio"> $16.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card" data-id="5" data-name="cordero con piel de lobo" data-price="6800">
                 <img src="../imagenes/productos/cordero.png" alt="producto 5">
                 <h3>cordero con piel de lobo</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $6.800</samp>
+                <samp id="precio" class="precio"> $6.800</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card" data-id="6" data-name="gradum" data-price="28000">
                 <img src="../imagenes/productos/gradum.png" alt="producto 6">
                 <h3>Gradum</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $28.000</samp>
+                <samp id="precio" class="precio"> $28.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card" data-id="7" data-name="partridge" data-price="9000">
                 <img src="../imagenes/productos/partridge.png" alt="producto 7">
                 <h3>Partridge</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $9.000</samp>
+                <samp id="precio" class="precio"> $9.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card" data-id="8" data-name="perro callejero" data-price="13000">
                 <img src="../imagenes/productos/perro callejero.png" alt="producto 8">
                 <h3>Perro Callejero</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $13.000</samp>
+                <samp id="precio" class="precio"> $13.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card" data-id="9" data-name="piedra negra" data-price="14000">
                 <img src="../imagenes/productos/piedra negra.png" alt="producto 9">
                 <h3>Piedra negra</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $14.000</samp>
+                <samp id="precio" class="precio"> $14.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card"data-id="10" data-name="rutini blanc" data-price="15000">
                 <img src="../imagenes/productos/rutini sau blancs.png" alt="producto 10">
                 <h3>Rutini Sauvignon Blancs</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $15.000</samp>
+                <samp id="precio" class="precio"> $15.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card"data-id="11" data-name="sombrerero" data-price="12000">
                 <img src="../imagenes/productos/sombrero.png" alt="producto 11">
                 <h3>Sombrerero</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $12.000</samp>
+                <samp id="precio" class="precio"> $12.000</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
-            <div class="producto-card">
+            <div id="producto-card" class="producto-card"data-id="12" data-name="trumper rose" data-price="17800">
                 <img src="../imagenes/productos/trumper rose.png" alt="producto 12">
                 <h3>Tumperter rose</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <samp class="precio"> $17.800</samp>
+                <samp id="precio" class="precio"> $17.800</samp>
                 <button class="comprar-btn"> Comprar</button>
             </div>
         </div>
        </section>
     </main>
+
+   <div id="cart-modal" class="cart-modal">
+    <div id="cart-content" class="cart-content">
+        <span id="finalizar-carrito" class="finalizar-carrito">&times;</span>
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total" class="total">Total: $0</p>
+        <button id="finalizar">Finalizar compra</button>
+    </div>
+   </div>
+
+   <div id="gracias" class="gracias">
+    <div class="gracias-content">
+    <h2>¡Compra Finalizada!</h2>
+    <p>Gracias por tu compra</p>
+    <button id="cerrar" class="cerrar"> Cerrar</button>
+    </div>
+   </div>
+
     <footer>
         <div class="social-media">
             <a href="#"> Facebook</a>
@@ -129,5 +149,7 @@
         <small>Copyright 2024 </small>
         
     </footer>
+    <script src="../js/Script.js"></script>
+    <script src="/js/productos.js"></script>
 </body>
 </html>

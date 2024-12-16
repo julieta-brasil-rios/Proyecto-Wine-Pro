@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>winepro</title>
     <link rel="stylesheet" href="../style/stylecontacto.css">
+    <link rel="stylesheet" href="../style/basicos.css">
     
 </head>
 <body>
@@ -17,6 +18,7 @@
            <li> <a href="../index.html">INICIO</a></li>
            <li><a href="./productos.html">PRODUCTOS</a></li>
            <li><a href="./Contacto.html">CONTACTO</a></li>
+           
    
        </ul>
    </nav>
@@ -30,45 +32,59 @@
        </div>
 
    </section>
-<main class="container">
+
+<main class="formulario">
     <div class="formulario-contacto">
     <h2>formulario de contacto</h2>
-    <form action="link" method="post">
-    <div>
+    <form action="https://formspree.io/f/mjkvdoyd" method="post" id="contactoForm">
+    
+    <div class="campo">
     <label for="Nombre"> Nombre:</label>
-    <input type="text" placeholder="Juan Pérez" id="Nombre">
-    </div>
-    <div>
+    <input type="text" placeholder="Juan Pérez" id="Nombre" required>
+
+    <span class="error" id="errorNombre"></span>
+
+</div>
+    
+    <div class="campo">
     <label for="e-mail">E-mail:</label>
-    <input type="email" placeholder="xxx@gmail.com" id="E-mail">
-    </div>
-    <div>
+    <input type="email"id="email" placeholder="xxx@gmail.com" required>
+    <span class="error" id="errorEmail"></span>
+    
+</div>
+
+    <div class="campo">
     <label for="Telefono">Telefono:</label>
-    <input type="number" placeholder="1123456789" id="telefono" size="10">
-    </div>
-    <div>
+    <input type="number" placeholder="1123456789" id="telefono" size="10" required>
+   <span class="error" id="errorTelefono"></span> 
+</div>
+    
+    <div class="campo">
     <label for="consulta">Envíe su consulta:</label>
-    <textarea name="consulta" id="Consulta">Deje un mensaje..</textarea>
-    </div>
-    <div>
-    <button type="submit">Enviar</button>
+    <textarea name="consulta" id="mensaje">Deje un mensaje..</textarea>
+    <span class="error" id="errorMensaje"></span>
+</div>
+    
+    <button type="submit" class="boton">Enviar</button>
     </div>
 </form>
-    </div>
+   </div> 
+</main>
 
+<section class="contacto">
 <div class="datos-contacto">
     <h2>Datos de contacto</h2>
-    <p><strong>Instagram:</strong> @winepro_24</p>
-    <p><strong>Teléfono:</strong>23456789</p>
-    <p><strong>WhatsApp:</strong>1123456789</p>
-    <p><strong>E-mail:</strong> winepro.24@gmail.com</p>
-    <p><strong>Dirección:</strong> Avenida Corrientes 3800</p>
+    <p class="parrafo-contacto"><strong>Instagram:</strong> @winepro_24</p>
+    <p class="parrafo-contacto"><strong>Teléfono:</strong>23456789</p>
+    <p class="parrafo-contacto"><strong>WhatsApp:</strong>1123456789</p>
+    <p class="parrafo-contacto"><strong>E-mail:</strong> winepro.24@gmail.com</p>
+    <p class="parrafo-contacto"><strong>Dirección:</strong> Avenida Corrientes 3800</p>
 
     <iframe src="./iframe.html" frameborder="1000" id="Mapa">
 
 </iframe> 
 </div>
-</main>
+</section>
 
 <footer>
     <div class="social-media">
@@ -80,5 +96,7 @@
     <small>Copyright 2024 </small>
     
 </footer>
+<script src="../js/Script.js"></script>
+
 </body>
 </html>
