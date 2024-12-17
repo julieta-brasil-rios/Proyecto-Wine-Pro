@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content:center;
     display:flex;
+    border-radius: 10px;
    }
    .porducto img {
     width:auto;
@@ -78,6 +79,7 @@
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
+    
    }
    .categoria{
     display: flex;
@@ -113,49 +115,54 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+    
    }
- .reseñas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+   
+   strong { 
+    font-weight: bold;
+   }
 
+ .reseñas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
    }
- .reseña-card {
-    background-color: white;
-    padding: 20px;
+
+ .reseñas-card {
+    background-color: rgb(243, 225, 225);
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
    }
-   /* imagen de cliente */
-   .reseña-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
+
+   .stars {
+    color: #ffa500;
+    font-size: 1.4rem;
+    margin-bottom:20px ;
    }
-   /* contenido de las reseñas */
- .reseña-card p {
-    font-size: 1.2rem;
+
+   .texto-reseña {
+    font-size: 0.95rem;
     color: #333;
     margin-bottom: 15px;
-}
-.reseña-card h4 {
-    font-size: 1.1rem;
-    color: #555;
-    text-align: right;
-}
-.reseña-card:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
+   }
 
+   /* imagen de cliente */
+   .reseña-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+   }
+ 
 /* Responsividad */
 @media (max-width: 768px) {
     h2 {
