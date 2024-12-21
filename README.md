@@ -27,7 +27,4 @@ Este sitio es un e-commer dedicado a la venta de vinos,brindando experiencias un
 
 # Autor
 - **Julieta Belen Brasil Rios** 
-# preentrega-proyecto-talento-tech-julieta-brasil-rios
-# preentrega-julieta-brasil-rios
-# preentrega-proyecto-talento-tech-julieta-brasil-rios
-# Proyecto-Wine-Pro
+
