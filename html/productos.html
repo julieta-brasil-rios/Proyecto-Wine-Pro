@@ -16,38 +16,36 @@
         <div class="logo">
            <h1>Wine  Pro</h1>
         </div>  
-       <nav id="navegador"> 
-       <ul>
-           <li><a href="../index.html">INICIO</a></li>
-           <li><a href="./productos.html">PRODUCTOS</a></li>
-           <li><a href="./Contacto.html">CONTACTO</a></li>
-           <i class='bx bxs-shopping-bag' id="cart-icon"></i>
-           <div class="cart">
-            <h2 class="cart-title">Carrito</h2>
-            <div class="cart-content">
-                <div class="cart-box">
-                    <img src="/imagenes/productos/bobo..png" alt="" class="cart-img">
-                    <div class="detalle-box">
-                        <div class="cart-product-title">Bobo</div>
-                        <div class="cart-price">$16000</div>
-                        <input type="number" value="1" class="cart-quantity">
+        <nav id="navegador"> 
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./productos.html">PRODUCTOS</a></li>
+                <li><a href="./Contacto.html">CONTACTO</a></li>
+                <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                <span id="cart-counter" class="cart-counter">0</span>
+                <div class="cart">
+                    <h2 class="cart-title">Carrito</h2>
+                    <div class="cart-content">
+                        <div class="cart-box">
+                            <img src="/imagenes/productos/bobo..png" alt="" class="cart-img">
+                            <div class="detalle-box">
+                                <div class="cart-product-title">Bobo</div>
+                                <div class="cart-price">$16000</div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <i class='bx bxs-trash-alt cart-remove'></i>
+                        </div>
                     </div>
-
-                    <i class='bx bxs-trash-alt cart-remove'></i>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <button type="button" class="btn-buy">Comprar</button>
+                    <i class='bx bx-x' id="close-cart"></i>
                 </div>
-                
-            </div>
-
-            <div class="total">
-                <div class="total-title">Total</div>
-                <div class="total-price">$0</div>
-            </div>
-
-            <button type="button" class="btn-buy">Comprar</button>
-            <i class='bx bx-x' id="close-cart"></i>
-           </div>
-       </ul>
-   </nav>
+            </ul>
+         </nav>
+         
    </header> 
    <!-- Banner Principal -->
    <section class="banner">
@@ -61,7 +59,7 @@
        <section id="productos" class="productos">
         <h2>Nuestros productos</h2>
         <div id="productos-container" class="productos-container">
-            <div id="producto-card" class="producto-card" data-id="1" data-name="la iride" data-price="5000">
+            <div id="producto-card" class="producto-card" data-id="1" data-name="Vino 1" data-price="5000">
                 <img src="../imagenes/productos/la iride.png" alt="producto 1" class="product-img">
                 <h3 class="product-title">La Iride</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -69,7 +67,7 @@
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart '></i>
             </div>
-            <div id="producto-card" class="producto-card" data-id="2" data-name="algodon" data-price="8500">
+            <div id="producto-card" class="producto-card" data-id="2" data-name="Vino 2" data-price="8500">
                 <img src="../imagenes/productos/algodon.png" alt="producto 2" class="product-img">
                 <h3 class="product-title">Algodon</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -77,31 +75,31 @@
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card" data-id="3" data-name="azul" data-price="11000">
+            <div id="producto-card" class="producto-card" data-id="3" data-name="Vino 3" data-price="11000">
                 <img src="../imagenes/productos/azul.png" alt="producto 3" class="product-img">
-                <h3 class="product-title">La Azul</h3>
+                <h3 class="product-title">Azul</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span id="precio" class="precio"> $11.000</span>
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card" data-id="4" data-name="bobo" data-price="16000">
+            <div id="producto-card" class="producto-card" data-id="4" data-name="Vino 4" data-price="16000">
                 <img src="../imagenes/productos/bobo..png" alt="producto 4" class="product-img">
-                <h3 class="product-title">bobo</h3>
+                <h3 class="product-title">Bobo</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span id="precio" class="precio"> $16.000</span>
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card" data-id="5" data-name="cordero con piel de lobo" data-price="6800">
+            <div id="producto-card" class="producto-card" data-id="5" data-name="Vino 5" data-price="6800">
                 <img src="../imagenes/productos/cordero.png" alt="producto 5" class="product-img">
-                <h3 class="product-title">cordero con piel de lobo</h3>
+                <h3 class="product-title">Cordero con piel de lobo</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span id="precio" class="precio"> $6.800</span>
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card" data-id="6" data-name="gradum" data-price="28000">
+            <div id="producto-card" class="producto-card" data-id="6" data-name="Vino 6" data-price="28000">
                 <img src="../imagenes/productos/gradum.png" alt="producto 6" class="product-img">
                 <h3 class="product-title">Gradum</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -109,7 +107,7 @@
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card" data-id="7" data-name="partridge" data-price="9000">
+            <div id="producto-card" class="producto-card" data-id="7" data-name="Vino 7" data-price="9000">
                 <img src="../imagenes/productos/partridge.png" alt="producto 7" class="product-img">
                 <h3 class="product-title">Partridge</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -117,7 +115,7 @@
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card" data-id="8" data-name="perro callejero" data-price="13000">
+            <div id="producto-card" class="producto-card" data-id="8" data-name="Vino 8" data-price="13000">
                 <img src="../imagenes/productos/perro callejero.png" alt="producto 8" class="product-img">
                 <h3 class="product-title">Perro Callejero</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -125,23 +123,23 @@
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card" data-id="9" data-name="piedra negra" data-price="14000">
+            <div id="producto-card" class="producto-card" data-id="9" data-name="Vino 9" data-price="14000">
                 <img src="../imagenes/productos/piedra negra.png" alt="producto 9" class="product-img">
-                <h3 class="product-title">Piedra negra</h3>
+                <h3 class="product-title">Piedra Negra</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span id="precio" class="precio"> $14.000</span>
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card"data-id="10" data-name="rutini blanc" data-price="15000">
+            <div id="producto-card" class="producto-card"data-id="10" data-name="Vino 10" data-price="15000">
                 <img src="../imagenes/productos/rutini sau blancs.png" alt="producto 10" class="product-img">
-                <h3 class="product-title">Rutini Sauvignon Blancs</h3>
+                <h3 class="product-title">Rutini Sauvignon Blanc</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span id="precio" class="precio"> $15.000</span>
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card"data-id="11" data-name="sombrerero" data-price="12000">
+            <div id="producto-card" class="producto-card"data-id="11" data-name="Vino 11" data-price="12000">
                 <img src="../imagenes/productos/sombrero.png" alt="producto 11" class="product-img">
                 <h3 class="product-title">Sombrerero</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -149,9 +147,9 @@
                 <!-- <button class="comprar-btn"> Comprar</button> -->
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div id="producto-card" class="producto-card"data-id="12" data-name="trumper rose" data-price="17800">
+            <div id="producto-card" class="producto-card"data-id="12" data-name="Vino 12" data-price="17800">
                 <img src="../imagenes/productos/trumper rose.png" alt="producto 12" class="product-img">
-                <h3 class="product-title">Tumperter rose</h3>
+                <h3 class="product-title">Trumper Rosé</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span id="precio" class="precio"> $17.800</span>
                 <!-- <button class="comprar-btn"> Comprar</button> -->
@@ -162,24 +160,7 @@
        </section>
     </main>
 
-   <!-- <div id="cart-modal" class="cart-modal">
-    <div id="cart-content" class="cart-content">
-        <span id="finalizar-carrito" class="finalizar-carrito">&times;</span>
-        <h2>Carrito de compras</h2>
-        <ul id="cart-items"></ul>
-        <p id="total" class="total">Total: $0</p>
-        <button id="finalizar">Finalizar compra</button>
-    </div>
-   </div> -->
-
-   <div id="gracias" class="gracias">
-    <div class="gracias-content">
-    <h2>¡Compra Finalizada!</h2>
-    <p>Gracias por tu compra</p>
-    <button id="cerrar" class="cerrar"> Cerrar</button>
-    </div>
-   </div>
-
+  
     <footer>
         <div class="social-media">
             <a href="#"> Facebook</a>
@@ -190,9 +171,9 @@
         <small>Copyright 2024 </small>
         
     </footer>
-    <script src="../js/Script.js"></script>
     <script src="../js/productos.js"></script>
     <script src="../js/productos.json"></script>
+    <script src="../js/Script.js"></script>
     
 </body>
 </html>

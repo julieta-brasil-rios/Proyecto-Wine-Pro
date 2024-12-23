@@ -1,175 +1,176 @@
 
    /* productos  destacados*/
    .productos-destacados {
-    padding: 40px 20px;
-    text-align: center;
-   }
-   .productos-destacados h2 {
-    margin-bottom: 20px;
-   }
+      padding: 40px 20px;
+      text-align: center;
+     }
+     .productos-destacados h2 {
+      margin-bottom: 20px;
+     }
+     
+     .productos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+     }
+     .producto {
+      width: calc(30%);
+      background-color: white;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+      text-align: center;
+      margin-bottom: 20px;
+      flex-direction: column;
+      justify-content:center;
+      display:flex;
+      border-radius: 10px;
+     }
+     .porducto img {
+      width:auto;
+      height:auto;
+      max-width: 100%;
+      margin: 0 auto;
+      border-radius: 5px;
+      object-fit: cover;
+      display: block;
+   .productos img {
+      max-width: 100%;
+      height: auto;
+      display:block;
+      width:auto;
+      height: auto;
+      margin: 0 auto;
+  }
+  
+     }
+  
+     .boton-ver, .boton-comprar {
+      display: inline-block;
+      background-color: #C6A56E;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+     }
+  
+     .bonon-ver {
+      background-color: #800020;
+     }
+     .boton-comprar:hover, .boton-ver:hover {
+      background-color: #D1A557;
+     }
+  
+     .categoria ul {
+      list-style: none;
+     }
+     .categoria ul li {
+      margin-bottom: 10px;
+     }
+     .cta-button {
+      margin-top: 20px;
+     }
+     .categorias {
+      padding: 40px 20px;
+      text-align: center;
+     }
+  
+     .categorias-conteiner { 
+      display: flex;
+      justify-content:space-around;
+      flex-wrap: wrap;
+      
+     }
+     .categoria{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+      width: 100px;
+      height: auto;
+      border-radius: 5px;
+     }
+     .categoria img {
+      width: 600px;
+      height: auto;
+      margin-bottom: 10px;
+     }
+     .boton-categoria {
+      display: inline-block;
+      background-color: #C6A56E;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+     }
+  /* seccion reseñas */
+     .h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+     }
+     .reseñas {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      
+     }
+     
+     strong { 
+      font-weight: bold;
+     }
+  
+   .reseñas-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+     }
+  
+   .reseñas-card {
+      background-color: rgb(243, 225, 225);
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+     }
+  
+     .stars {
+      color: #ffa500;
+      font-size: 1.4rem;
+      margin-bottom:20px ;
+     }
+  
+     .texto-reseña {
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 15px;
+     }
+  
+     /* imagen de cliente */
+     .reseña-card img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+     }
    
-   .productos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   }
-   .producto {
-    width: calc(30%);
-    background-color: white;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    text-align: center;
-    margin-bottom: 20px;
-    flex-direction: column;
-    justify-content:center;
-    display:flex;
-    border-radius: 10px;
-   }
-   .porducto img {
-    width:auto;
-    height:auto;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 5px;
-    object-fit: cover;
-    display: block;
- .productos img {
-    max-width: 100%;
-    height: auto;
-    display:block;
-    width:auto;
-    height: auto;
-    margin: 0 auto;
-}
-
-   }
-
-   .boton-ver, .boton-comprar {
-    display: inline-block;
-    background-color: #C6A56E;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-   }
-
-   .bonon-ver {
-    background-color: #800020;
-   }
-   .boton-comprar:hover, .boton-ver:hover {
-    background-color: #D1A557;
-   }
-
-   .categoria ul {
-    list-style: none;
-   }
-   .categoria ul li {
-    margin-bottom: 10px;
-   }
-   .cta-button {
-    margin-top: 20px;
-   }
-   .categorias {
-    padding: 40px 20px;
-    text-align: center;
-   }
-
-   .categorias-conteiner { 
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    
-   }
-   .categoria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
-   }
-   .categoria img {
-    width: 600px;
-    height: auto;
-    margin-bottom: 10px;
-   }
-   .boton-categoria {
-    display: inline-block;
-    background-color: #C6A56E;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-   }
-/* seccion reseñas */
-   .h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-   }
-   .reseñas {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    
-   }
-   
-   strong { 
-    font-weight: bold;
-   }
-
- .reseñas-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-   }
-
- .reseñas-card {
-    background-color: rgb(243, 225, 225);
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   }
-
-   .stars {
-    color: #ffa500;
-    font-size: 1.4rem;
-    margin-bottom:20px ;
-   }
-
-   .texto-reseña {
-    font-size: 0.95rem;
-    color: #333;
-    margin-bottom: 15px;
-   }
-
-   /* imagen de cliente */
-   .reseña-card img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-   }
- 
-/* Responsividad */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.75rem;
-    }
-
-    .reseña-card p {
-        font-size: 1rem;
-    }
-}
+  /* Responsividad */
+  @media (max-width: 768px) {
+      h2 {
+          font-size: 1.75rem;
+      }
+  
+      .reseña-card p {
+          font-size: 1rem;
+      }
+  }
+  
