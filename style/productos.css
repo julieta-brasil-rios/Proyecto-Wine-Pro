@@ -32,7 +32,7 @@
   width: 360px;
   min-height: 100vh;
   padding: 20px;
-  background-color: rgb(220, 217, 217);
+  background-color: rgb(214, 200, 200);
   box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
   transition: 0.3s;
 }
@@ -205,6 +205,8 @@ h2{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(400px,auto));
   gap: 1.5rem;
+  background-color: #bbafaf;
+  
 }
 
 .precio {
@@ -215,7 +217,7 @@ h2{
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color:#afaaaa;
+  background-color:#933d3d;
   padding: 20px;
   cursor: pointer;
   width: 100px;
@@ -240,7 +242,7 @@ h2{
 
 .producto-card:hover {
   translate: 0 -10;
-  box-shadow: 0 10px 5px #555;
+  box-shadow: 1px 10px 5px #4a4343;
 }
 
 .product-img{
@@ -266,94 +268,6 @@ left: -10px;
 }
 
 
-/* .cart-modal{
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0,0,0.5);
-  justify-content: center;
-  align-items: center;
-}
-.cart-content {
-  background-color: #ffffff;
-  padding:20px;
-  border-radius: 10px;
-  width: 300px;
-  max-height: 400px;
-  overflow-y: auto;
-}
-
-#cart-items {
-  list-style: none;
-  padding: 0;
-}
-
-#cart-items li {
-  padding: 10px 0;
-  border-bottom: 1px solid #dddddd;
-}
-
-#finalizar {
-  background-color: #555;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-#total {
-  margin-top: 15px;
-  font-weight:900 ;
-  color: #333333;
-}
-
-#finalizar-carrito {
-  cursor: pointer;
-  font-size: 45px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: #ffffff;
-}
-
-.gracias {
-  display: none;
-  position: fixed;
-  top:0; 
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0 ,0.5);
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.gracias-content {
-  background-color: #ffffff;
-  padding:20px ;
-  border-radius: 10px;
-  text-align: center;
-  width: 300px;
-  
-}
-
-.gracias-content h2 {
-  margin-bottom: 15px;
-}
-
-.gracias-content button {
- background-color: #555; 
- color: #fff;
- padding: 10px 20px;
- border: none;
- cursor: pointer;
-} */
-/* imagen del producto */
 
 .producto-card img {
   width: 100%;

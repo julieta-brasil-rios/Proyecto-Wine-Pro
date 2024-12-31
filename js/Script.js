@@ -23,10 +23,10 @@ closeCart.onclick = () => cart.classList.remove("active");
 
 // Carga inicial del DOM y datos del carrito
 document.addEventListener("DOMContentLoaded", () => {
-  renderCart(); // Renderiza los productos guardados en localStorage
-  updateCartCounter(); // Actualiza el contador dinámico
+  renderCart(); 
+  updateCartCounter(); // Actualiza el contador 
   updateTotal(); // Calcula el total inicial
-  setupAddToCartButtons(); // Configura los botones "Añadir al carrito"
+  setupAddToCartButtons(); 
 });
 
 // Configurar botones de "Añadir al carrito"
@@ -68,7 +68,7 @@ function saveCart() {
 // Renderizar los productos en el carrito
 function renderCart() {
   const cartContent = document.querySelector(".cart-content");
-  cartContent.innerHTML = ""; // Limpia el contenido previo
+  cartContent.innerHTML = ""; 
 
   cartData.forEach(product => {
     const cartShopBox = document.createElement("div");
@@ -78,7 +78,7 @@ function renderCart() {
       <img src="${product.productImg}" alt="" class="cart-img">
       <div class="detalle-box">
         <div class="cart-product-title">${product.title}</div>
-        <div class="cart-price">$${product.price.toFixed(2)}</div>
+        <div class="cart-price">$${product.price.toFixed(3)}</div>
         <input type="number" value="${product.quantity}" min="1" class="cart-quantity">
       </div>
       <i class='bx bxs-trash-alt cart-remove'></i>
@@ -125,7 +125,33 @@ function updateCartCounter() {
 
 // Calcular y actualizar el total del carrito
 function updateTotal() {
-  const total = cartData.reduce((sum, product) => sum + product.price * product.quantity, 0);
-  document.querySelector(".total-price").innerText = `$${total.toFixed(2)}`;
+  const total = cartData.reduce((sum, product) => {
+    return sum + product.price * product.quantity;
+  }, 0);
+  document.querySelector(".total-price").innerText = `$${total.toFixed(3)}`;
 }
 
+// Cargar productos desde el archivo JSON
+document.addEventListener("DOMContentLoaded", () => {
+  fetch('../js/productos.json')
+      .then(response => response.json())
+      .then(data => {
+          const container = document.getElementById('productos-container');
+          data.forEach(product => {
+              const productCard = `
+                  <div class="producto-card" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">
+                      <img src="${product.image}" alt="${product.name}" class="product-img">
+                      <h3 class="product-title">${product.name}</h3>
+                      <p>${product.description}</p>
+                      <span class="precio"> $${product.price.toLocaleString()}</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+              `;
+              container.innerHTML += productCard;
+          });
+
+          // Configurar los botones después de cargar los productos
+          setupAddToCartButtons();
+      })
+      .catch(error => console.error("Error cargando los productos:", error));
+});

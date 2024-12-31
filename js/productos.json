@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "La Iride",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 5000,
+      "image": "../imagenes/productos/la iride.png"
+    },
+    {
+      "id": 2,
+      "name": "Algodon",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 8500,
+      "image": "../imagenes/productos/algodon.png"
+    },
+    {
+      "id": 3,
+      "name": "Azul",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 11000,
+      "image": "../imagenes/productos/azul.png"
+    },
+    {
+      "id": 4,
+      "name": "Bobo",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 16000,
+      "image": "../imagenes/productos/bobo..png"
+    },
+    {
+      "id": 5,
+      "name": "Cordero con piel de lobo",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 6800,
+      "image": "../imagenes/productos/cordero.png"
+    },
+    {
+      "id": 6,
+      "name": "Gradum",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 28000,
+      "image": "../imagenes/productos/gradum.png"
+    },
+    {
+      "id": 7,
+      "name": "Partridge",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 9000,
+      "image": "../imagenes/productos/partridge.png"
+    },
+    {
+      "id": 8,
+      "name": "Perro Callejero",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 13000,
+      "image": "../imagenes/productos/perro callejero.png"
+    },
+    {
+      "id": 9,
+      "name": "Piedra Negra",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 14000,
+      "image": "../imagenes/productos/piedra negra.png"
+    },
+    {
+      "id": 10,
+      "name": "Rutini Sauvignon Blanc",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 15000,
+      "image": "../imagenes/productos/rutini sau blancs.png"
+    },
+    {
+      "id": 11,
+      "name": "Sombrerero",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 12000,
+      "image": "../imagenes/productos/sombrero.png"
+    },
+    {
+      "id": 12,
+      "name": "Trumper Rosé",
+      "description": "Lorem ipsum dolor sit amet.",
+      "price": 17800,
+      "image": "../imagenes/productos/trumper rose.png"
+    }
+  ]
+  
